@@ -1,0 +1,79 @@
+.app__pad {
+  display: grid;
+  max-width: 100%;
+  gap: calculate-rem(10px);
+  grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+  margin: calculate-rem(50px);
+  height: calc(100% - calculate-rem(200px));
+  &__button {
+    min-width: 0;
+    min-height: 20vh;
+    border-radius: calculate-rem(30px);
+    background-color: $ruby;
+    box-shadow:
+    5px 5px 10px 2px rgba(0,0,0,0.5), 
+    inset calculate-rem(1px) calculate-rem(1px) calculate-rem(40px) calculate-rem(5px) rgba(0, 0, 0, 50%);
+    cursor: pointer;
+    transition: box-shadow 0.1s linear;
+  }
+
+  .clap {
+    background-image: radial-gradient(rgba(230,100,101,1), rgb(216, 164, 177));
+    &.pressed{
+      background-image: radial-gradient(circle, rgba(230,100,101,1) 40%, rgb(216, 164, 177) 100%);
+      box-shadow: 
+      2px 2px 10px 0px rgba(216, 164, 177,0.7),
+      inset calculate-rem(1px) calculate-rem(1px) calculate-rem(20px) calculate-rem(5px) rgba(0, 0, 0, 30%);
+    }
+  }
+
+  .hi-hat {
+    background: radial-gradient(rgba(221, 230, 100, 1), rgb(175, 235, 198));
+    &.pressed{
+      background-image: radial-gradient(circle, rgba(221, 230, 100, 1) 40%, rgb(175, 235, 198) 100%);
+      box-shadow: 
+      2px 2px 10px 0px rgba(175, 235, 198,0.7),
+      inset calculate-rem(1px) calculate-rem(1px) calculate-rem(20px) calculate-rem(5px) rgba(0, 0, 0, 30%);
+    }
+  }
+
+  .cowbell {
+    background-image: radial-gradient(rgba(255, 255, 130, 1), rgb(243, 203, 187));
+    &.pressed{
+      background-image: radial-gradient(circle, rgba(255, 255, 130, 1) 40%, rgb(243, 203, 187) 100%);
+      box-shadow: 
+      2px 2px 10px 0px rgba(243, 203, 187,0.7),
+      inset calculate-rem(1px) calculate-rem(1px) calculate-rem(20px) calculate-rem(5px) rgba(0, 0, 0, 30%);
+    }
+  }
+
+  .crash {
+    background-image: radial-gradient(rgb(101, 219, 255), rgb(197, 208, 218));
+    &.pressed{
+      background-image: radial-gradient(circle, rgb(101, 219, 255) 40%, rgb(197, 208, 218) 100%);
+      box-shadow: 
+      2px 2px 10px 0px rgba(197, 208, 218,0.7),
+      inset calculate-rem(1px) calculate-rem(1px) calculate-rem(20px) calculate-rem(5px) rgba(0, 0, 0, 30%);
+    }
+  }
+
+  .low {
+    background-image: radial-gradient(rgb(231, 112, 202), rgb(218, 200, 243));
+    &.pressed{
+      background-image: radial-gradient(circle, rgb(231, 112, 202) 40%, rgb(218, 200, 243) 100%);
+      box-shadow: 
+      2px 2px 10px 0px rgba(218, 200, 243,0.7),
+      inset calculate-rem(1px) calculate-rem(1px) calculate-rem(20px) calculate-rem(5px) rgba(0, 0, 0, 30%);
+    }
+  }
+
+  .kick {
+    background-image: radial-gradient(rgb(113, 110, 255), rgb(164, 189, 214));
+    &.pressed{
+      background-image: radial-gradient(circle, rgb(113, 110, 255) 40%, rgb(164, 189, 214) 100%);
+      box-shadow: 
+      2px 2px 10px 0px rgba(164, 189, 214,0.7),
+      inset calculate-rem(1px) calculate-rem(1px) calculate-rem(20px) calculate-rem(5px) rgba(0, 0, 0, 30%);
+    }
+  }
+}

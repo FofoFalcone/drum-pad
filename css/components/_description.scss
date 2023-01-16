@@ -1,0 +1,26 @@
+.app__description {
+  position: relative;
+  margin: auto;
+  max-width: 80%;
+  text-align: center;
+
+  > * {
+    margin-top: calculate-rem(30px);
+  }
+
+  h1 {
+    color: $ruby;
+  }
+  
+  p {
+    color: $ruby;
+  }
+
+  sub {
+    color: $smitten;
+  }
+
+  a {
+    color: $violet;
+  }
+}
